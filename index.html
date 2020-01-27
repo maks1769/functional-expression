@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        function getResult(num1, num2, sign) {
+            switch (sign) {
+                case '+':
+                    return num1 + num2;
+                case '-':
+                    return num1 - num2;
+                case '*':
+                    return num1 * num2;
+                case '**':
+                    return num1 ** num2;
+                case '/':
+                    return num1 / num2;
+                case '%':
+                    return num1 % num2;
+            }
+        }
+
+        console.log(getResult(10, 2, '-'));
+
+    </script>
+
+    <script>
+
+        function foo(string, symbols) {
+            var response = '';
+            for (var i = 0; i < string.length; i++) {
+                response += symbols.includes(string[i]) ? '' : string[i];
+            }
+            return response;
+        }
+
+        console.log(foo('welcome', ['e', 'o']));
+    </script>
+
+</body>
+</html>
